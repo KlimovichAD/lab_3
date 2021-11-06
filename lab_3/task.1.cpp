@@ -1,1 +1,16 @@
-// I have no idea, how to write this "ёлочка".
+//Пользователь вводит натуральное число N.
+//Построить елочку.
+#include <iostream>
+int main() {
+
+    int N;
+    std::cout << "Enter number of stages:";
+    std::cin >> N;
+    for (int i = 1; i <= N; ++i) {
+        for (int j = 0; j < i; ++j) {
+            std::cout << '*';
+        }
+        std::cout << std::endl;
+    }
+return 0;
+}
